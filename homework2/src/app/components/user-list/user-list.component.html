@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let user of userList" >
+    <app-user [user]="user"></app-user>
+    <app-homework-list [taskList]="user.taskList"></app-homework-list>
+  </li>
+</ul>
